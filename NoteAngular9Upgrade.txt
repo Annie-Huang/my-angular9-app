@@ -1,0 +1,80 @@
+https://www.youtube.com/watch?v=TcdhAxDWWxM	<< Angular 9 - What's New? What changed?
+
+https://next.angular.io/guide/template-typecheck
+https://next.angular.io/guide/updating-to-version-9
+https://update.angular.io/#8.2:9.0
+
+https://www.npmjs.com/package/@angular/cli
+
+=========================================================
+Overview point:
+You don't actually need to need to adjust anything if you don't want to. That is optional syntax change like removing { static: false } from @ViewChild('xxxxx', { static: false })
+But it's all right if you don't want to do it.
+
+
+root/tsconfig.json
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true
+    "strictTemplates": true
+  }
+
+
+  @ViewChild('fromAccount', { static: false })
+  fromAccount: FormControlDirective;
+Can be change to:
+  @ViewChild('fromAccount')
+  fromAccount: FormControlDirective;
+You don't have to have changed it. But it just make it cleanly. It's optional
+
+
+And if you need to access priceElement inthe ngOnInit, you have to set static: true (You already have to do this in angular 8):
+@ViewChild('price', {static: true}) priceElement: ElementRef<HTMLInputElement>
+ngOnInit() {
+  console.log(this.priceElement); // {static: true} required if we want to work with...
+}
+
+
+Compare C:\Temp\my-angular9-app (test-create-library branch) with C:\Temp\my-angular8dot2-app (test-create-library branch): Both CSS base, no routing.
+==============================================================================================================================================================
+C:\Temp\my-angular9-app\e2e\src\app.po.ts
+
+C:\Temp\my-angular9-app\projects\ea-ui\src\test.ts
+C:\Temp\my-angular9-app\projects\ea-ui\package.json
+C:\Temp\my-angular9-app\projects\ea-ui\tsconfig.lib.json
+C:\Temp\my-angular9-app\projects\ea-ui\tsconfig.lib.prod.json	<< new file
+
+C:\Temp\my-angular9-app\src\app\app.component.spec.ts	>> fixture.debugElement.componentInstance; --> fixture.componentInstance;
+C:\Temp\my-angular9-app\src\test.ts
+
+
+C:\Temp\my-angular9-app\angular.json
+C:\Temp\my-angular9-app\package.json
+C:\Temp\my-angular9-app\tsconfig.app.json
+C:\Temp\my-angular9-app\tsconfig.json
+
+
+
+ToDo:
+=========
+0. Find out the script to how to build and zip each app and lib
+1. Check the artifact size for each app + each library in angular 8
+2. Check the artiface size for each app + each library in angular 9
+3. Sprint up a angular 9 project with angular cli, create a ea-ui library. And then root file directory comparision and mark down the different files and their content.
+
+
+Updating Angular CLI
+npm uninstall -g angular-cli
+npm uninstall --save-dev angular-cli
+
+Global package:
+npm uninstall -g @angular/cli
+npm cache verify
+# if npm version is < 5 then use `npm cache clean` 
+npm install -g @angular/cli@latest
+
+Local project package:
+rm -rf node_modules dist # use rmdir /S/Q node_modules dist in Windows Command Prompt; use rm -r -fo node_modules,dist in Windows PowerShell 
+npm install --save-dev @angular/cli@latest
+npm install
+

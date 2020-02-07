@@ -1,0 +1,30 @@
+
+
+=====================================================================
+C:\Temp>npm uninstall -g @angular/cli
+C:\Temp>npm list -g --depth=0
+C:\Temp>npm cache verify
+C:\Temp>npm install -g @angular/cli@latest
++ @angular/cli@9.0.1
+C:\Temp>ng new my-angular9-app
+
+Annie@DESKTOP-BH46C1T MINGW64 /c/Temp
+$ ng new my-angular9-app
+
+Annie@DESKTOP-BH46C1T MINGW64 /c/Temp
+$ cd my-angular9-app/
+
+Annie@DESKTOP-BH46C1T MINGW64 /c/Temp/my-angular9-app (master)
+$ git remote add origin git@github.com:Annie-Huang/my-angular9-app.git
+
+Annie@DESKTOP-BH46C1T MINGW64 /c/Temp/my-angular9-app (master)
+$ git push -u origin master
+
+C:\Temp\my-angular9-app>ng generate library ea-ui --prefix=eui
+
+
+Global package:
+npm uninstall -g @angular/cli
+npm cache verify
+# if npm version is < 5 then use `npm cache clean` 
+npm install -g @angular/cli@latest
