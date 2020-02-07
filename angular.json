@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "my-angular9-app": {
@@ -119,6 +119,50 @@
           }
         }
       }
-    }},
-  "defaultProject": "my-angular9-app"
+    },
+    "ea-ui": {
+      "projectType": "library",
+      "root": "projects/ea-ui",
+      "sourceRoot": "projects/ea-ui/src",
+      "prefix": "eui",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ea-ui/tsconfig.lib.json",
+            "project": "projects/ea-ui/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ea-ui/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ea-ui/src/test.ts",
+            "tsConfig": "projects/ea-ui/tsconfig.spec.json",
+            "karmaConfig": "projects/ea-ui/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ea-ui/tsconfig.lib.json",
+              "projects/ea-ui/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "my-angular9-app",
+  "cli": {
+    "analytics": "92c40edd-31cc-4001-8de9-5281f1e20454"
+  }
 }
