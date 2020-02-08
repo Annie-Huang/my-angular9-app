@@ -8,8 +8,11 @@ https://www.npmjs.com/package/@angular/cli
 
 =========================================================
 Overview point:
-You don't actually need to need to adjust anything if you don't want to. That is optional syntax change like removing { static: false } from @ViewChild('xxxxx', { static: false })
-But it's all right if you don't want to do it.
+1. You don't actually need to need to adjust anything if you don't want to. That is optional syntax change like removing { static: false } from @ViewChild('xxxxx', { static: false })
+   But it's all right if you don't want to do it.
+2. Polyfill.ts has not changed.
+3. .editorconfig has not change
+4.
 
 
 root/tsconfig.json
@@ -54,13 +57,43 @@ C:\Temp\my-angular9-app\tsconfig.app.json
 C:\Temp\my-angular9-app\tsconfig.json
 
 
+Compare C:\Temp\my-angular9-scss-route-app (create-lib branch) with C:\Temp\my-angular8-app (create-lib branch): Both SCSS base, plus routing.
+==============================================================================================================================================================
+C:\Temp\my-angular9-scss-route-app\e2e\src\app.po.ts
+C:\Temp\my-angular9-scss-route-app\e2e\protractor.conf.js
+
+C:\Temp\my-angular9-scss-route-app\projects\ea-ui\src\lib\ea-ui.component.ts
+C:\Temp\my-angular9-scss-route-app\projects\ea-ui\src\test.ts
+C:\Temp\my-angular9-scss-route-app\projects\ea-ui\package.json
+C:\Temp\my-angular9-scss-route-app\projects\ea-ui\tsconfig.lib.json
+C:\Temp\my-angular9-scss-route-app\projects\ea-ui\tsconfig.lib.prod.json	<< new file
+
+C:\Temp\my-angular9-scss-route-app\src\app\app.component.spec.ts	>> fixture.debugElement.componentInstance; --> fixture.componentInstance;
+C:\Temp\my-angular9-scss-route-app\src\test.ts
+
+C:\Temp\my-angular9-scss-route-app\angular.json
+C:\Temp\my-angular9-scss-route-app\package.json
+C:\Temp\my-angular9-scss-route-app\tsconfig.app.json
+C:\Temp\my-angular9-scss-route-app\tsconfig.json
+
+
+
+Done:
+==========
+3. Sprint up a angular 9 project with angular cli, create a ea-ui library. And then root file directory comparision and mark down the different files and their content.
+
+Sort of Done:
+===================
+5. Compared the tslint.json difference between standard angular cli build (my-anyand lodgement ui	<<< Heaps of differences....
+6. Compared the tslint.json difference between standard standard nx build (myorg) and lodgement ui	<<< Not many differences.... good news...
+
 
 ToDo:
 =========
 0. Find out the script to how to build and zip each app and lib
 1. Check the artifact size for each app + each library in angular 8
 2. Check the artiface size for each app + each library in angular 9
-3. Sprint up a angular 9 project with angular cli, create a ea-ui library. And then root file directory comparision and mark down the different files and their content.
+4. Need to compare lodgement-ui and myorg to see the different between nx angular app configuration.
 
 
 Updating Angular CLI
