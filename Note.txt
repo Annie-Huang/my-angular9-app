@@ -6,6 +6,15 @@ C:\Temp>npm list -g --depth=0
 C:\Temp>npm cache verify
 C:\Temp>npm install -g @angular/cli@latest
 + @angular/cli@9.0.1
+
+
+You should do this:
+Annie@DESKTOP-BH46C1T MINGW64 /c/Temp
+$ ng new my-angular9-scss-route-app --routing=true --style=scss
+C:\Temp\my-angular9-scss-route-app>ng generate library ea-ui --prefix=eui
+
+
+
 C:\Temp>ng new my-angular9-app
 
 Annie@DESKTOP-BH46C1T MINGW64 /c/Temp
@@ -26,5 +35,5 @@ C:\Temp\my-angular9-app>ng generate library ea-ui --prefix=eui
 Global package:
 npm uninstall -g @angular/cli
 npm cache verify
-# if npm version is < 5 then use `npm cache clean` 
+# if npm version is < 5 then use `npm cache clean`
 npm install -g @angular/cli@latest
