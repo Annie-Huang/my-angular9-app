@@ -1,0 +1,12 @@
+
+https://storybookjs.netlify.com/angular-cli/?path=/story/core-onpush--class-specified-component-with-on-push-and-knobs
+https://storybookjs.netlify.com/angular-cli/?path=/story/addon-knobs--all-knobs
+https://github.com/storybookjs/storybook/blob/next/examples/angular-cli/src/stories/all-knobs.component.ts
+
+https://storybook.js.org/docs/guides/guide-angular/
+https://www.learnstorybook.com/intro-to-storybook/angular/en/get-started/
+https://medium.com/javascript-in-plain-english/storybook-for-angular-components-with-markdown-support-72950cc3d9ee
+=====================================================================
+
+
+C:\Temp\my-angular9-app>npx -p @storybook/cli sb init --type angular
