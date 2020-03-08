@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { ProgressIndicatorModule } from '@ea/ea-ui';
+import {MessagesModule} from 'primeng/messages';
+import {MessageModule} from 'primeng/message';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,9 @@ import { ProgressIndicatorModule } from '@ea/ea-ui';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ProgressIndicatorModule
+    ProgressIndicatorModule,
+    MessagesModule,
+    MessageModule
   ],
   providers: [],
   bootstrap: [AppComponent]

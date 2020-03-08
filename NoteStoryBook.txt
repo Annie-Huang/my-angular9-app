@@ -7,6 +7,7 @@ https://storybook.js.org/docs/guides/guide-angular/
 https://www.learnstorybook.com/intro-to-storybook/angular/en/get-started/
 https://medium.com/javascript-in-plain-english/storybook-for-angular-components-with-markdown-support-72950cc3d9ee
 https://medium.com/ngconf/a-storybook-with-angular-41b1a5617c9
+https://www.youtube.com/watch?v=kopW6vzs9dg&feature=youtu.be
 
 https://www.npmjs.com/package/@storybook/addon-knobs
 
@@ -18,3 +19,7 @@ D:\Temp\learnstorybook-code2
 
 C:\Temp\my-angular9-app>npx -p @storybook/cli sb init --type angular
 C:\Temp\my-angular9-app>npm install @storybook/addon-knobs --save-dev
+
+C:\Temp\my-angular9-app>npm install primeng --save
+C:\Temp\my-angular9-app>npm install primeicons --save
+
