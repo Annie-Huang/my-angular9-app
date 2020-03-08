@@ -37,3 +37,9 @@ npm uninstall -g @angular/cli
 npm cache verify
 # if npm version is < 5 then use `npm cache clean`
 npm install -g @angular/cli@latest
+
+
+
+C:\Temp\my-angular9-app>npm install gulp --save-dev
+C:\Temp\my-angular9-app>npm install del --save-dev
+

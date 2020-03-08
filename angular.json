@@ -30,6 +30,12 @@
             "styles": [
               "src/styles.scss"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "projects/ea-ui/src/assets/scss",
+                "projects/ea-ui/src"
+              ]
+            },
             "scripts": []
           },
           "configurations": {
@@ -66,7 +72,12 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "my-angular9-app:build"
+            "browserTarget": "my-angular9-app:build",
+            "sourceMap": {
+              "scripts": true,
+              "styles": true,
+              "vendor": true
+            }
           },
           "configurations": {
             "production": {
@@ -94,7 +105,16 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "projects/ea-ui/src/assets/scss",
+                "projects/ea-ui/src"
+              ]
+            },
+            "scripts": [],
+            "codeCoverageExclude": [
+              "src/app/components/**/*"
+            ]
           }
         },
         "lint": {
