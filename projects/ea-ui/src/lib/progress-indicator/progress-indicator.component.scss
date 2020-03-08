@@ -1,0 +1,57 @@
+//@import 'ea-style/variables';
+
+$pe-bullet-size: 30px;
+$color-tokyo-stone: #999;
+$color-egregious-white: #fff;
+$color-brand-dark-green: #0d8924;
+$color-brand-lightest-green: #d9ecdd;
+$icon-size: 24px;
+
+.ea-progress-indicator {
+  display: inline;
+
+  .dash-line {
+    display: inline-block;
+    height: calc(#{$pe-bullet-size} / 2);
+    &:after {
+      content: '';
+      display: block;
+      width: calc(#{$pe-bullet-size} * 2);
+      // replaced border-width from px to thin
+      // https://support.google.com/chrome/forum/AAAAP1KN0B0r1neUxqo5Gc/?hl=en&gpf=%23!topic%2Fchrome%2Fr1neUxqo5Gc
+      border-bottom: thin dashed $color-tokyo-stone;
+    }
+  }
+
+  span {
+    border-radius: 50%;
+    height: $pe-bullet-size;
+    width: $pe-bullet-size;
+    display: inline-block;
+    background: $color-egregious-white;
+    border: 2px solid $color-brand-dark-green;
+    line-height: 52px;
+    position: relative;
+    img {
+      width: $icon-size;
+      height: $icon-size;
+      position: absolute;
+      top: 4px;
+      left: 3px;
+    }
+    &.active {
+      background: $color-brand-dark-green;
+    }
+    &.completed {
+      background: $color-brand-lightest-green;
+      border: 0;
+      color: $color-brand-dark-green;
+      position: relative;
+      &::before {
+        position: absolute;
+        top: -7px;
+        left: 7px;
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+<div class="ea-progress-indicator" *ngFor="let step of totalSteps; let index = index">
+  <span [ngClass]="{ active: index + 1 === currentStep, completed: index + 1 < currentStep }">
+    <img src="assets/images/icons/tick-green.svg" alt="icon tick" *ngIf="index + 1 < currentStep" />
+  </span>
+  <div class="dash-line" *ngIf="(index + 1) !== totalSteps.length"></div>
+</div>
