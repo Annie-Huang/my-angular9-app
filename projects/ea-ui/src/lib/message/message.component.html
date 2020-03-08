@@ -1,0 +1,14 @@
+<div
+  *ngIf="hasMessages()"
+  class="ea-message {{ getSeverityClass() }}"
+  [@messageAnimation]="{
+    value: 'visible',
+    params: { showTransitionParams: showTransitionOptions, hideTransitionParams: hideTransitionOptions }
+  }"
+>
+  <ul>
+    <li *ngFor="let msg of value">
+      <span *ngIf="msg.detail" [innerHTML]="msg.detail"></span>
+    </li>
+  </ul>
+</div>

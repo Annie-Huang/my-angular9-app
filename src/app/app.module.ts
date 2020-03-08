@@ -1,12 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { ProgressIndicatorModule } from '@ea/ea-ui';
-import {MessagesModule} from 'primeng/messages';
-import {MessageModule} from 'primeng/message';
+import { ProgressIndicatorModule, MessageModule, MessageService} from '@ea/ea-ui';
+import {MessagesModule as pMessagesModule} from 'primeng/messages';
+import {MessageModule as pMessageModule} from 'primeng/message';
 
 @NgModule({
   declarations: [
@@ -14,12 +15,14 @@ import {MessageModule} from 'primeng/message';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     ProgressIndicatorModule,
-    MessagesModule,
-    MessageModule
+    MessageModule,
+    pMessagesModule,
+    pMessageModule
   ],
-  providers: [],
+  providers: [MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

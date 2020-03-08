@@ -12,3 +12,13 @@
 <p-message severity="success" text="Record Saved"></p-message>
 <p-message severity="warn" text="Are you sure?"></p-message>
 <p-message severity="error" text="Field is required"></p-message>
+
+<br>
+<br>
+<br>
+
+<div class="message-custom-location"></div>
+<button (click)="showMessage('warning')" class="ea-button ea-button--primary ea-button--micro">warn</button>
+<button (click)="showMessage('error')" class="ea-button ea-button--primary ea-button--micro">error</button>
+<button (click)="showMessage('success')" class="ea-button ea-button--primary ea-button--micro">success</button>
+<button (click)="hideMessage()" class="ea-button ea-button--secondary ea-button--micro">hide</button>
