@@ -122,6 +122,10 @@ npm install --save-dev @angular/cli@latest
 npm install
 
 ###############################################################
+https://github.com/angular/angular/issues/36518     <<< Got a whole bunch of warning msg when running "npm run build"
+
+
+
 Upgrade angular 9.0.0 to angular 9.1.1
 
 Annie@DESKTOP-BH46C1T MINGW64 /c/temp
