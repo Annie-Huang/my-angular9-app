@@ -121,3 +121,14 @@ rm -rf node_modules dist # use rmdir /S/Q node_modules dist in Windows Command P
 npm install --save-dev @angular/cli@latest
 npm install
 
+###############################################################
+Upgrade angular 9.0.0 to angular 9.1.1
+
+Annie@DESKTOP-BH46C1T MINGW64 /c/temp
+$ ng new my-angular9dot1-app --routing=true --style=scss
+
+Annie@DESKTOP-BH46C1T MINGW64 /c/temp/my-angular9dot1-app (master)
+$ ng generate library ea-ui --prefix=eui
+
+
+C:\Temp\my-angular9-app>ng update @angular/core @angular/cli      <<< This upgraded all the angular library, not just these two...
