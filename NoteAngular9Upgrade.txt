@@ -132,3 +132,6 @@ $ ng generate library ea-ui --prefix=eui
 
 
 C:\Temp\my-angular9-app>ng update @angular/core @angular/cli      <<< This upgraded all the angular library, not just these two...
+
+C:\Temp\my-angular9-app>npm uninstall karma
+C:\Temp\my-angular9-app>npm install karma --save-dev
