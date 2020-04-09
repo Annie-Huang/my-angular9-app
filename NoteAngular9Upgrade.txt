@@ -3,6 +3,8 @@ https://www.youtube.com/watch?v=TcdhAxDWWxM	<< Angular 9 - What's New? What chan
 https://next.angular.io/guide/template-typecheck
 https://next.angular.io/guide/updating-to-version-9
 https://update.angular.io/#8.2:9.0
+https://blog.angular.io/version-9-of-angular-now-available-project-ivy-has-arrived-23c97b63cfa3
+https://angular.io/guide/updating-to-version-9
 
 https://www.npmjs.com/package/@angular/cli
 
