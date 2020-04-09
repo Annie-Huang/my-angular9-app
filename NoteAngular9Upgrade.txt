@@ -134,4 +134,12 @@ $ ng generate library ea-ui --prefix=eui
 C:\Temp\my-angular9-app>ng update @angular/core @angular/cli      <<< This upgraded all the angular library, not just these two...
 
 C:\Temp\my-angular9-app>npm uninstall karma
-C:\Temp\my-angular9-app>npm install karma --save-dev
+C:\Temp\my-angular9-app>npm install karma --save-dev              <<< we use "karma": "^4.4.1", and my-angular9dot1-app use "karma": "~4.4.1",
+
+C:\Temp\my-angular9-app>npm uninstall karma-jasmine
+C:\Temp\my-angular9-app>npm install karma-jasmine --save-dev
+<<< We are using karma-jasmine": "~3.0.1",
+    my-angular9dot1-app use karma-jasmine@3.0.3. It got: `karma-jasmine": "~3.0.1",`
+
+
+
