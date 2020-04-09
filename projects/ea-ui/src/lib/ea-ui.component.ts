@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
       ea-ui works!
     </p>
   `,
-  styles: []
+  styles: [
+  ]
 })
 export class EaUiComponent implements OnInit {
 
