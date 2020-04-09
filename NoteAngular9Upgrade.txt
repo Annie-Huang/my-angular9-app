@@ -141,5 +141,10 @@ C:\Temp\my-angular9-app>npm install karma-jasmine --save-dev
 <<< We are using karma-jasmine": "~3.0.1",
     my-angular9dot1-app use karma-jasmine@3.0.3. It got: `karma-jasmine": "~3.0.1",`
 
+C:\Temp\my-angular9-app>npm uninstall tslint
+C:\Temp\my-angular9-app>npm install tslint --save-dev           <<< we use "tslint": "^6.1.1", and my-angular9dot1-app use "tslint": "~6.1.0",
+
+C:\Temp\my-angular9-app>npm uninstall typescript
+C:\Temp\my-angular9-app>npm install typescript --save-dev       <<< we use "typescript": "^3.8.3", and my-angular9dot1-app use "typescript": "~3.8.3"
 
 
