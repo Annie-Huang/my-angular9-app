@@ -9,13 +9,13 @@ import {INgxMyDpOptions} from 'ngx-mydatepicker';
 })
 export class SampleDatePickerReactiveFormsComponent implements OnInit {
 
-  private myDatePickerOptions: INgxMyDpOptions = {
+  myDatePickerOptions: INgxMyDpOptions = {
     dateFormat: 'dd.mm.yyyy'
   };
 
-  private disabled = false;
+  disabled = false;
 
-  private myForm: FormGroup;
+  myForm: FormGroup;
 
   constructor(private formBuilder: FormBuilder) { }
 
@@ -33,11 +33,6 @@ export class SampleDatePickerReactiveFormsComponent implements OnInit {
   }
 
   onSubmitReactiveForms(): void {
-    // console.log('Value: ', this.myForm.controls['myDate'].value, ' - Valid: ', this.myForm.controls['myDate'].valid, ' - Dirty: ', this.myForm.controls['myDate'].dirty);
-
-    // console.log('Value: ', this.myForm.controls['myDate'].value,
-    //   ' - Valid: ', this.myForm.controls['myDate'].valid, ' - Dirty: ', this.myForm.controls.myDate.dirty);
-
     console.log('Value: ', this.myForm.controls.myDate.value,
       ' - Valid: ', this.myForm.controls.myDate.valid, ' - Dirty: ', this.myForm.controls.myDate.dirty);
   }
