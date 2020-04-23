@@ -5,10 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {NgxMyDatePickerModule} from 'ngx-mydatepicker';
 import {ReactiveFormsModule} from '@angular/forms';
+import { SampleDatePickerReactiveFormsComponent } from './sample-date-picker-reactive-forms/sample-date-picker-reactive-forms.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SampleDatePickerReactiveFormsComponent
   ],
   imports: [
     BrowserModule,

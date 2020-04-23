@@ -3,5 +3,4 @@ https://github.com/kekeh/ngx-mydatepicker/issues/182
 
 ================================================
 C:\Temp\my-angular9-app>npm install ngx-mydatepicker@ng9 --save
-
-
+C:\Temp\my-angular9-app>ng generate component sample-date-picker-reactive-forms
