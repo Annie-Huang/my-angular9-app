@@ -1,0 +1,7 @@
+https://github.com/kekeh/ngx-mydatepicker
+https://github.com/kekeh/ngx-mydatepicker/issues/182
+
+================================================
+C:\Temp\my-angular9-app>npm install ngx-mydatepicker@ng9 --save
+
+
