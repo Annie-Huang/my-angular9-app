@@ -2,16 +2,27 @@ https://medium.com/better-programming/how-to-fix-your-angular-app-when-its-not-w
 https://stackoverflow.com/questions/35140718/angular-2-4-5-not-working-in-ie11
 
 https://github.com/angular/angular-cli/issues/14455     <<< How to configure the app to able to run in IE in local while keep app and lib to es2015
+https://angular.io/cli/build
+
 
 ==============================================================
 
 For normal Chrome build in local: es2015
+-----------------------------------------------
 C:\Temp\my-angular9-app>npm run build-lib
 C:\Temp\my-angular9-app>npm run start
 
+Prod build:
+C:\Temp\my-angular9-app>npm run build-lib:prod
+C:\Temp\my-angular9-app>npm run build:prod
+
+
+
 For normal IE build in local: es5 (while keep tsconfig.json and tsconfig.lib.json to es2015)
+----------------------------------------------------------------------------------------------------
 C:\Temp\my-angular9-app>npm run build-lib
 C:\Temp\my-angular9-app>npm run start-ie
+
 
 Need to change on the following files:
 - angular.json
