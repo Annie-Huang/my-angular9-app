@@ -103,6 +103,14 @@ Bradleys-MacBook-Pro:my-angular-app-with-cli-seven-three-eight anniehuang$
                                                   npx http-server -c-1 dist/my-angular-app-with-cli-seven-three-eight/
 
 
+Build lodgement-ui (not working, not sure how the two apps, host and shipments, can communicate with each other with http-server)
+-----------------------------------------------------------------------------------------------------------------------------------
+lodgement-ui>npm run build host
+lodgement-ui>npm run build shipments
+lodgement-ui>cd dist\apps\host
+lodgement-ui\dist\apps\host>http-server -o
+
+
 Test against IE
 ########################
 https://www.virtualbox.org/
