@@ -12,6 +12,7 @@ C:\Temp\my-angular9-app>npm run start
 For normal IE build in local: es5 (while keep tsconfig.json and tsconfig.lib.json to es2015)
 C:\Temp\my-angular9-app>npm run build-lib
 C:\Temp\my-angular9-app>npm run start-ie
+
 Need to change on the following files:
 - angular.json
 - package.json
@@ -57,7 +58,7 @@ angular.json change to support IE in local:
      ...
     },
     "es5": {
-      "browserTarget": "my-angular8dot2-app:build:es5"
+      "browserTarget": "my-angular9-app:build:es5"
     }
   }
 },

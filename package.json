@@ -8,7 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build-lib": "ng build ea-ui"
+    "build-lib": "ng build ea-ui",
+    "start-ie": "ng serve -c es5"
   },
   "private": true,
   "dependencies": {
