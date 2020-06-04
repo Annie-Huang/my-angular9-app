@@ -75,3 +75,31 @@ angular.json change to support IE in local:
 },
 
 ---------------
+
+
+How to build production and test production build locally:
+#########################################################################
+C:\Temp\my-angular9-app>npm install -g http-server
+C:\Temp\my-angular9-app>cd dist\my-angular9-app
+
+C:\Temp\my-angular9-app\dist\my-angular9-app>http-server -o
+Starting up http-server, serving ./
+Available on:
+  http://192.168.1.106:8080
+  http://127.0.0.1:8080
+  http://172.18.29.209:8080
+
+
+Now you can open in chrome or IE:
+http://127.0.0.1:8080/
+
+Other ways to tset the app
+---------------------------------
+testing app:
+          bradleys-mbp:my-angular-app anniehuang$ npx http-server dist/my-angular-app/
+  Bradleys-MacBook-Pro:my-angular-app anniehuang$ npx http-server -c-1 dist/my-angular-app/       << load without caching.
+Bradleys-MacBook-Pro:digital-frontend anniehuang$ npx http-server -c-1 dist/apps/
+Bradleys-MacBook-Pro:my-angular-app-with-cli-seven-three-eight anniehuang$
+                                                  npx http-server -c-1 dist/my-angular-app-with-cli-seven-three-eight/
+
+
