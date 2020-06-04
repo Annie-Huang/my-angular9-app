@@ -103,3 +103,11 @@ Bradleys-MacBook-Pro:my-angular-app-with-cli-seven-three-eight anniehuang$
                                                   npx http-server -c-1 dist/my-angular-app-with-cli-seven-three-eight/
 
 
+Test against IE
+########################
+https://www.virtualbox.org/
+https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/
+
+ng serve --host 0.0.0.0 --open
+ng serve --host 0.0.0.0 --open --port 4201
+
